@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/elte-fi/www-assets@19.10.16/styles/mdss.min.css">
+    <title>Feladatok</title>
+    <style>
+        .feladat {
+            display: none;
+        }
+        /* Aktuális feladat stílusának kiemelése */
+        .aktualis {
+            background-color: #f0f0f0;
+            display: block;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Javascript DOM-kezelés</h1>
+
+    <ul>
+        <li><a href="#feladat1">Feladat 1: Hello világ!</a></li>
+        <li><a href="#feladat2">Feladat 2: Hello világ ismétlése</a></li>
+        <li><a href="#feladat3">Feladat 3: Kör kerület számítása</a></li>
+        <li><a href="#feladat4">Feladat 4: Hiperhivatkozások listázása</a></li>
+        <li><a href="#feladat5">Feladat 5: Kép megjelenítése URL alapján</a></li>
+        <li><a href="#feladat6">Feladat 6: Táblázat frissítése</a></li>
+        <li><a href="#feladat7">Feladat 7: Könyvlista év alapján</a></li>
+        <li><a href="#feladat8">Feladat 8: Kiadó alapján könyvek</a></li>
+        <li><a href="#feladat9">Feladat 9: Számláló komponens</a></li>
+        <li><a href="#feladat10">Feladat 10: Szám kitalálása</a></li>
+    </ul>
+
+    <!-- Feladat 1: Hello világ! -->
+    <div id="feladat1" class="feladat aktualis">
+        <h3>Feladat 1: Hello világ!</h3>
+        <p>Egy gomb megnyomására írd ki a 'helloText' id-val rendelkező elemnek, hogy "Helló világ!"!</p>
+        <input type="text" id="nameInput" placeholder="Add meg a neved">
+        <button>Hello</button>
+        <h3 id="helloText"></h3>
+    </div>
+
+    
+
+    <!-- Feladat 2: Hello világ ismétlése -->
+    <div id="feladat2" class="feladat">
+        <h3>Feladat 2: Hello világ ismétlése</h3>
+        <p>Kérj be egy számot, és annyiszor írd ki egymás alá egyre növekvő betűméretekkel a "Hello világ!" szöveget! (szöveges beviteli mező, gomb)</p>
+        <input type="number" id="repeatInput" placeholder="Ismétlések száma">
+        <button>Mehet</button>
+        <div id="helloRepeats"></div>
+    </div>
+
+    
+
+    <!-- Feladat 3: Kör kerület számítása -->
+    <div id="feladat3" class="feladat">
+        <h3>Feladat 3: Kör kerület számítása</h3>
+        <p>Írj egy kör kerületét kiszámoló programot!</p>
+        <input type="number" id="radiusInput" placeholder="Kör sugara">
+        <button>Számol</button>
+        <p id="circleResult"></p>
+    </div>
+
+    
+
+    <!-- Feladat 4: Hiperhivatkozások listázása -->
+    <div id="feladat4" class="feladat">
+        <h3>Feladat 4: Hiperhivatkozások listázása</h3>
+        <p>Oldalbetöltéskor listázd ki az oldal összes hiperhivatkozásának a címét!</p>
+        <a href="http://www.elte.hu">ELTE</a>
+        <a href="http://webprogramozas.inf.elte.hu">Webprogramozás az ELTÉn</a>
+        <a href="http://www.inf.elte.hu">ELTE Informatikai Kara</a>
+        <ul id="hyperlinksList"></ul>
+    </div>
+
+    
+
+    <!-- Feladat 5: Kép megjelenítése URL alapján -->
+    <div id="feladat5" class="feladat">
+        <h3>Feladat 5: Kép megjelenítése URL alapján</h3>
+        <p>Egy szöveges beviteli mezőben legyen lehetőség megadni egy interneten elérhető kép URL-jét. Egy mellette lévő gombra kattintva jelenítsd meg a képet a dokumentumban!</p>
+        <input type="text" id="imageUrlInput" placeholder="Kép URL">
+        <button>Megjelenít</button>
+        <div id="imageContainer"></div>
+    </div>
+
+     <!-- Feladat 6: Táblázat frissítése -->
+     <div id="feladat6" class="feladat">
+        <h3>Feladat 6: Táblázat frissítése</h3>
+        <p>Adott egy három oszlopból álló táblázat! A táblázat felett 3 szöveges beviteli mezővel és egy gombbal. A gombra kattintva a 3 beviteli mező értéke új sorként szúródjon be a táblázatba. A táblázat alapját tartalmazó listát a szkriptben megtalálod.</p>
+        <input type="text" id="input1" placeholder="Érték 1">
+        <input type="text" id="input2" placeholder="Érték 2">
+        <input type="text" id="input3" placeholder="Érték 3">
+        <button>Frissítés</button>
+        <table id="dataTable">
+            <tr>
+                <th>Név</th>
+                <th>Osztály</th>
+                <th>Kor</th>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div id="feladat7" class="feladat">
+        <h3>Feladat 7: Könyvlista év alapján</h3>
+        <p>Felületen kérj be egy évszámot, és listázd ki az abban az évben megjelent könyvcímeket! A feladathoz tartozó könyvek listáját a scriptben találod!</p>
+        <label for="evszam">Adja meg az évszám:</label>
+        <input type="number" id="evszam">
+        <button>Listázás</button>
+        <ul id="booksByYear"></ul>
+    </div>
+
+    <div id="feladat8" class="feladat">
+        <h3>Feladat 8: Kiadó alapján könyvek</h3>
+        <p>Készíts egy legördülő mezőt, amelyben az egyes kiadók vannak felsorolva. Egy gombra kattintva táblázatos formában jelenítsd meg a kiválasztott kiadóhoz tartozó könyveket!</p>
+        <label for="kiado">Válasszon kiadót:</label>
+        <select id="kiado">
+            <option value="kiado1">Kiadó 1</option>
+            <option value="kiado2">Kiadó 2</option>
+            <option value="kiado3">Kiadó 3</option>
+        </select>
+        <button>Listázás</button>
+        <table id="booksByPublisher">
+            <tr>
+                <th>Szerző</th>
+                <th>Cím</th>
+                <th>Kiadás éve</th>
+                <th>ISBN szám</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="feladat9" class="feladat">
+        <h3>Feladat 9: Számláló komponens</h3>
+        <p>Készíts egy számlálót komponenst!<br>
+            a. A számláló egy csak olvasható szöveges beviteli mezőből és két gombból (plusz, mínusz) áll! A gombok meg nyomásával a szöveges beviteli mezőben lévő szám eggyel nő vagy csökken.<br>
+            b. Definiálj a szkriptben egy minimum és egy maximum értéket! Ha a számláló eléri valamelyik értéket, akkor a megfelelő gomb ne legyen elérhető!<br>
+            c. *Ha a gombot hosszan nyomjuk le, akkor a számláló automatikusan kezdje el az értéket változtatni.</p>
+        <input type="text" id="szamlaloErtek" readonly>
+        <button id="inc">+</button>
+        <button id="dec">-</button>
+    </div>
+
+    <div id="feladat10" class="feladat">
+        <h3>Feladat 10: Szám kitalálása</h3>
+        <p>Gondoljon a gép egy számra! A mi feladatunk, hogy kitaláljuk. Legyen lehetőség tippelni a számra, a gép pedig annyit válaszoljon, hogy az általa gondolt szám kisebb-e vagy nagyobb az általunk tippeltnél. Véletlen szám generálásához használd a Math.random() függvényt, illetve kerekítéshez a Math.floor() függvényt!</p>
+        <label for="tipp">Tipp:</label>
+        <input type="number" id="tipp">
+        <button>Tippelés</button>
+        <p id="tippEredmeny"></p>
+        <ul id="tippLista"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

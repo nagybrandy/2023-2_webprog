@@ -6,7 +6,7 @@ const h3 = document.querySelector('#helloText')
 button1.addEventListener('click', handleClick)
 
 function handleClick(){
-    h3.innerHTML = `Hello ${input1.value}!`
+    h3.innerHTML = `Hello ${input1.value}!` // altgr + 7
 }
 // Task 2
 const t2div = document.querySelector('#task2')
@@ -26,11 +26,38 @@ button2.addEventListener('click',() => {
 })
 
 // Task 3
+const t3div = document.querySelector('#task3')
+const input3 = document.querySelector('#radiusInput')
+const button3 = t3div.querySelector('button')
+
+button3.addEventListener('click', () => {
+    document.querySelector('#circleResult').innerHTML = `Circle's perimeter: ${input3.value * 2 * Math.PI}`
+})
+
+console.log(t3div)
 
 // Task 4
+const links = document.querySelectorAll('a')
+console.log(links)
+
+const ul = document.querySelector('#hyperlinksList')
+
+links.forEach(a_link => {
+    let li = document.createElement('li')
+    li.innerHTML = `<a href=${a_link}>${a_link}</a>`
+    ul.append(li)
+})
 
 // Task 5
+const t5div = document.querySelector('#task5')
+const input5 = t5div.querySelector('input')
+const button5 = t5div.querySelector('button')
 
+button5.addEventListener('click', () => {
+    const img = document.createElement('img')
+    img.src = input5.value
+    document.querySelector('#imageContainer').append(img)
+})
 // Task 6
 const children = [
     { name: "Anna", class: "3/A", age: 8 },
@@ -52,7 +79,7 @@ const booksList = [
     {
         author: "George Orwell",
         title: "1984",
-        publicationYear: 1949,
+        publicationYear: 1997,
         publisher: "Secker & Warburg",
         isbn: "978-0451524935"
     },
@@ -78,6 +105,22 @@ const booksList = [
         isbn: "No ISBN"
     }
 ];
+
+const t7div = document.querySelector('#task7')
+const input7 = t7div.querySelector('input')
+const button7 = t7div.querySelector('button')
+
+button7.addEventListener('click', ()=> {
+    let newBooks = booksList.filter(e => e.publicationYear == input7.value)
+   
+    document.querySelector('#booksByYear').innerHTML = ""
+    
+    newBooks.forEach(book => {
+        const li = document.createElement('li')
+        li.innerHTML = book.title
+        document.querySelector('#booksByYear').append(li)
+    })
+})
 
 // Task 8
 

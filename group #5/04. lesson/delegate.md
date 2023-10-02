@@ -17,7 +17,7 @@
        scoldChild(event.teacherWhoWroteIt);
        giveKiss(child);
    }
-   delegte(headteacher, '.elementarySchoolChild', 'writeInAttendanceBook', goToPrincipal);
+   delegate(headteacher, '.elementarySchoolChild', 'writeInAttendanceBook', goToPrincipal);
 
     function delegate(parent, child, when, what){
         function eventHandler(event){

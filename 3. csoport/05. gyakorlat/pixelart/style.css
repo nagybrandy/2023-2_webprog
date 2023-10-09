@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap');
+
+table.preview, table.edit {
+    border-collapse: collapse;
+    margin: 20px auto;
+ }
+ table.preview td {
+     border: none;
+     width: 3px;
+     height: 3px;
+     padding: 0;
+ }
+ table.edit td {
+     border: 1px solid rgb(54, 42, 42);
+     width: 20px;
+ 
+     height: 20px;
+     padding: 0;
+ }
+
+ button {
+    all: unset;
+    margin: 10px;
+    background-color: rgb(127, 7, 127);
+    padding: 10px;
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    border-radius: 10px;
+
+ }
+
+#ingame {
+    display: none;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(233, 214, 233);
+}
+
+#nev {
+    margin-bottom: 0px;
+}

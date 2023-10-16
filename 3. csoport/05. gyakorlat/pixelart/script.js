@@ -4,6 +4,8 @@
 const play_btn = document.querySelector('#play')
 const return_btn = document.querySelector('#return')
 const newd_btn = document.querySelector('#newd')
+const save_btn = document.querySelector('#save')
+
 const color_inp = document.querySelector('#color')
 const name_inp = document.querySelector('#nev')
 const menu_div = document.querySelector('#menu')
@@ -59,3 +61,18 @@ edit_table.addEventListener('click', (e)=> {
     }
 })
 
+save_btn.addEventListener('click', ()=> {
+    const ntable = document.createElement('table')
+    ntable.classList.add('preview')
+    ntable.innerHTML += edit_table.innerHTML
+    ntable.classList.add(`${nev}_table`)
+    document.querySelector('#previews').append(ntable)
+    localStorage.setItem('previews', document.querySelector('#previews').innerHTML)
+})
+
+document.querySelector('#previews').addEventListener('click', (e)=>{
+    if(e.target.matches('td')) edit_table.innerHTML = e.target.closest('table').innerHTML
+})
+
+
+document.querySelector('#previews').innerHTML = localStorage.getItem('previews')

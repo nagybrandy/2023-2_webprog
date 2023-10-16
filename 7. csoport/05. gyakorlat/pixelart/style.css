@@ -7,7 +7,7 @@ table.preview, table.edit {
 }
 
 table.preview {
-    display: inline-block;
+    display: inline;
     margin: 3px;
 }
 table.preview td {

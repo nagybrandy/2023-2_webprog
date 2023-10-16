@@ -4,16 +4,24 @@ table.preview, table.edit {
     border-collapse: collapse;
     margin: 20px auto;
  }
+ table {
+    background-color: whitesmoke;
+
+ }
  table.preview td {
-     border: none;
      width: 3px;
      height: 3px;
      padding: 0;
+     
+ }
+ table.preview {
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid;
  }
  table.edit td {
      border: 1px solid rgb(54, 42, 42);
      width: 20px;
- 
      height: 20px;
      padding: 0;
  }

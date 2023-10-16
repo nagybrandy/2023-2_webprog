@@ -1,0 +1,17 @@
+canvas {
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+body {
+    background-color: #222121;
+    color: whitesmoke;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+img {
+    display: none;
+}

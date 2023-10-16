@@ -1,0 +1,78 @@
+table.preview, table.edit {
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    margin: 0 auto;
+
+ }
+ table.preview td {
+     border: none;
+     width: 3px;
+     height: 3px;
+     padding: 0;
+ }
+ table.edit td {
+     border: 1px solid lightgray;
+     width: 20px;
+     height: 20px;
+     padding: 0;
+ }
+
+ #ingame
+ {
+    display: none;
+ }
+
+ body
+ {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(60, 60, 60);
+    color:whitesmoke;
+ }
+ 
+ button
+ {
+    color: black !important;
+    all: unset;
+    width: 10%;
+    background-color: lime;
+    margin: 10px;
+    padding:10px;
+    border-radius: 5px;
+    transition: all .2s ease;
+ }
+
+ button:hover
+ {
+    width: 20%;
+    background-color: rgb(0, 213, 0);
+    
+ }
+
+ details
+ {
+    margin-top: 30px;
+
+
+ }
+
+ input
+ {
+    border-radius: 5px;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+ }
+
+ button#return
+ {
+    background-color: rgb(211, 133, 133);
+ }
+
+ table.preview
+ {
+    display: inline-block;
+    margin: 3px;
+ }

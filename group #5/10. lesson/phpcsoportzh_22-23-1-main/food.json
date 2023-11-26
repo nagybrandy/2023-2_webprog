@@ -1,0 +1,82 @@
+[
+    {
+        "name": "sausage",
+        "number": "3",
+        "type": "meat",
+        "date": "2022-10-27",
+        "expdate": "2020-11-27"
+    },
+    {
+        "name": "tomato",
+        "number": "2",
+        "type": "vegetable",
+        "date": "2022-11-27",
+        "expdate": "2022-12-05"
+    },
+    {
+        "name": "Dolma",
+        "number": "2",
+        "type": "meat",
+        "date": "2023-11-23",
+        "expdate": "2023-12-05"
+    },
+    {
+        "name": "asdasd",
+        "number": "2",
+        "expdate": "2023-11-30",
+        "type": "none",
+        "date": "2023-11-23"
+    },
+    {
+        "name": "asdasd",
+        "number": "2",
+        "expdate": "2023-11-30",
+        "type": "none",
+        "date": "2023-11-23"
+    },
+    {
+        "name": "Khinkali",
+        "number": "20",
+        "expdate": "2023-12-07",
+        "type": "meat",
+        "date": "2023-11-23"
+    },
+    {
+        "name": "Borsh",
+        "number": "3",
+        "expdate": "2023-11-15",
+        "type": "vegetable",
+        "date": "2023-11-23",
+        "link": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/a7\/Borscht_served.jpg"
+    },
+    {
+        "name": "beshbarmak",
+        "number": "2",
+        "expdate": "2023-11-29",
+        "type": "meat",
+        "date": "2023-11-23",
+        "link": "https:\/\/foreignfork.com\/wp-content\/uploads\/2023\/07\/Beshbarmak-FEATURE.jpg"
+    },
+    {
+        "name": "asd",
+        "number": "3",
+        "expdate": "2023-11-09",
+        "type": "meat",
+        "date": "2023-11-23"
+    },
+    {
+        "name": "Gulash Soup",
+        "number": "2",
+        "expdate": "2023-11-30",
+        "type": "meat",
+        "date": "2023-11-23"
+    },
+    {
+        "name": "Gulash Soup",
+        "number": "2",
+        "expdate": "2023-11-30",
+        "type": "meat",
+        "date": "2023-11-23",
+        "link": "https:\/\/kep.index.hu\/1\/0\/2752\/27528\/275286\/27528607_40b5b6018cc758eeb7b8e99ce309c31b_wm.jpg"
+    }
+]

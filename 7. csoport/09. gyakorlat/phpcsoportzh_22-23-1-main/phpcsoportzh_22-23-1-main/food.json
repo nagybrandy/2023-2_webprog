@@ -1,0 +1,37 @@
+[
+    {
+        "name": "virsli",
+        "number": "3",
+        "type": "húsféle",
+        "date": "2022-10-27",
+        "expdate": "2020-11-27"
+    },
+    {
+        "name": "paradicsom",
+        "number": "2",
+        "type": "zöldség",
+        "date": "2022-11-27",
+        "expdate": "2022-12-05"
+    },
+    {
+        "name": "Lángo$$$h",
+        "number": "10024",
+        "type": "zöldség",
+        "expdate": "2023-11-29",
+        "date": "2023-11-20"
+    },
+    {
+        "name": "asd",
+        "number": "2",
+        "type": "nincs",
+        "expdate": "",
+        "date": "2023-11-20"
+    },
+    {
+        "name": "asasd",
+        "number": "2",
+        "type": "nincs",
+        "expdate": "2023-11-15",
+        "date": "2023-11-20"
+    }
+]
